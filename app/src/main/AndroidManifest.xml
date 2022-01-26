@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    package="pit.holzer.weckuhr">
+
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission  android:name="android.permission.WRITE_SETTINGS" tools:ignore="ProtectedPermissions" />
+    <application
+        android:allowBackup="true"
+        android:fullBackupOnly="true"
+        android:icon="@mipmap/ic_launcher1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Weckuhr"
+        >
+        <activity
+            android:name=".UhrActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver
+            android:name="pit.holzer.weckuhr.AlarmReceiver"
+            android:exported="false">
+
+        </receiver>
+
+        <activity
+            android:name="pit.holzer.weckuhr.AlarmWindow"
+            android:label="Alarm"
+            android:noHistory="true" android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name="pit.holzer.weckuhr.ConfirmActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_confirm" android:screenOrientation="landscape">
+        </activity>
+    </application>
+
+</manifest>

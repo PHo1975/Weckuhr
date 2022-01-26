@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Weckuhr</string>
+<string name="button_name">Knopf drücken</string>
+<string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="alarmButLab">Setze Alarm</string>
+    <string name="cancelAlarmLab">Alarm abschalten</string>
+    <string name="title_activity_confirm">Alarm abschalten</string>
+    <string name="confirm_string">Abschalten bestätigen:</string>
+    <string name="wakeTimeLab">Weckzeit:</string>
+    <string name="setAlarmString">Setze Alarm</string>
+    <string name="lt_30"><![CDATA[< 30]]></string>
+    <string name="lt_1"><![CDATA[< 1]]></string>
+    <string name="_30"><![CDATA[30 >]]></string>
+    <string name="_1"><![CDATA[1 >]]></string>
+</resources>
